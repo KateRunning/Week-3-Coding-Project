@@ -47,6 +47,7 @@ console.log('\tQ: 2');
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 console.log(names);
 
+
 //2.a. Use a loop to iterate through the array and calculate the 
 //average number of letters per name. 
 console.log('\tQ: 2a');
@@ -94,7 +95,7 @@ console.log(nameLengths);
 console.log('\tQ: 6');
 let total = 0
 for (let i = 0; i < nameLengths.length; i++) {
-    console.log(nameLengths[i])
+    //console.log(nameLengths[i])
     total = total + nameLengths[i]
 }
 console.log(total); //12
@@ -135,7 +136,7 @@ function totalNums(arrayNum) {
 }
 console.log(totalNums(arrayNum));
 
-////10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
+//10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 console.log('\tQ: 10');
 
 let number1 = [10, 20, 30, 40]
@@ -199,9 +200,18 @@ let drink = willBuyDrink(isHotOutside, moneyInPocket) //isHotOutside = temperatu
 console.log(drink);
 
 //13. Create a function of your own that solves a problem.
+//In comments, write what the function does and why you created it.
 console.log('\tQ: 13');
 
+const numberArray5 = [20, 600, 5, 35, 75];
 
+function compareNumbers(a, b) { //function is checking the value of the elements
+    return a - b;
+}
+numberArray5.sort();
+console.log(numberArray5);
+numberArray5.sort(compareNumbers); // now the array is sorted in numeric value
+console.log(numberArray5);
 
 
 
