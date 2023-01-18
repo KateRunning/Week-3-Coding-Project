@@ -61,8 +61,16 @@ console.log(namesAverage); //3.83
 //2.b. Use a loop to iterate through the array again and 
 //concatenate all the names together, separated by spaces. 
 console.log('\tQ: 2b');
-let myString = names.join(' ');
+let myString = names.join(' '); 
 console.log(myString);
+
+let concat = '';
+for (let i = 0; i < names.length; i++) { //same result using a for loop
+    //console.log(names[i]);
+    concat = concat + names[i] + " ";
+}
+console.log(concat);
+
 //3. How do you access the last element of any array?
 console.log("\tQ: 3");
 console.log(names[names.length-1]);
